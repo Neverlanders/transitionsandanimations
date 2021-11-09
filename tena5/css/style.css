@@ -1,0 +1,38 @@
+body{
+    background: gainsboro;
+
+}
+.container{
+    perspective: 800px;
+}
+.box{
+    position:relative;
+    height: 432px;
+    width:50%;
+    margin:80px auto;
+    border:5px solid #fff;
+    /**transition*/
+    transition:transform 600ms;
+    transform-style: preserve-3d;
+}
+.box:hover{
+    transform:rotateX(180deg);
+}
+.front{
+    position:absolute;
+    height:432px;
+    width: 100%;
+    background-color: teal;
+    backface-visibility: hidden;
+    transform:rotateX(180deg);
+}
+.back{
+    position:absolute;
+    height: 432px;
+    width: 100%;
+    background-color: rebeccapurple;
+    backface-visibility: hidden;
+    transform:rotateX(0deg);
+}
+
+

@@ -1,0 +1,17 @@
+body{
+    background: thistle;
+}
+div{
+    /**properties button*/
+    margin-top:50px;
+    background-color: #0a58ca;
+    height:300px;
+    width:50%;
+    /**transition*/
+    transition-property: width;
+    transition-duration: 300ms;
+    transition-delay:2000ms;
+}
+div:hover{
+    width:90%;
+}
